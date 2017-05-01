@@ -3,7 +3,7 @@
 # it also removes speaker mentions, e.g. SPEAKER: F2
 
 #command line example
-#  python regexBrackets.py --list madLibs.txt --results MLres.txt
+#  python regexBrackets.py --list madLibs.txt --results ./res.txt
 
 import argparse
 import re
@@ -31,12 +31,15 @@ def main():
 def cleanTxt (list_path, results_path):
 
 	with open (list_path,'r') as myText:
-		data=myText.read()
+		data = myText.read()
 		with open (results_path, 'w') as results_file:
 			new = re.sub(r'\[.*?\]','', data)
-			improved = re.sub(r'SPEAKER\:\s\w\d\d','', new)
+			improved = re.sub(r'SPEAKER\:\s\w{1,3}','', new)
+			#new = re.sub(r'SPEAKER\:\s\w\d', '', data)
 		
 			results_file.write(improved)
+			#results_file.write(new)
+			results_file.close()
 				
 	
 
