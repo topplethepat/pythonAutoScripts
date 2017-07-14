@@ -1,5 +1,5 @@
 #program that adds two new lines whenever there is a
-# [00:00:16] and then saves the new fixed file without timestamps.
+# [00:00:16] and then saves the new fixed file with timestamps.
 #LA June 2017
 
 
