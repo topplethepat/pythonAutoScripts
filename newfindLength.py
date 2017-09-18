@@ -14,7 +14,7 @@ for filename in os.listdir(path):
 		a = f.read(4)
 		byteRate=0
 				
-		for i in range(4):
+		for i in range(1,4):
 			byteRate=byteRate + ord(a[i])*pow(256,i)
 					
 			fileSize=os.path.getsize(filename)
