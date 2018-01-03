@@ -1,3 +1,4 @@
+#this will find the length in seconds of an audio file and write it to a results file
 import os
 
 import pandas
