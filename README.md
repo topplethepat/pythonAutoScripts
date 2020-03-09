@@ -1,1 +1,1 @@
-# pythonAutoScripts is a collection of python 2.7 scripts I created to automate some work tasks.They help make my work more efficient and showcase my knowledge of Python.
+pythonAutoScripts is a collection of Python scripts I created to automate some work tasks, typically around cleaning and manipulating data.
