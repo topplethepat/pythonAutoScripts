@@ -3,14 +3,14 @@ import os
 
 import pandas
 
-path="/Users/lenorealford/Documents/pythonScripts/testVoicemailDownload"
+path="/pathtoFile/"
 res_file = "test4VM.csv"
 counter = 0
 data = pandas.DataFrame([])
 for filename in os.listdir(path):
 	if filename.endswith(".wav"):
 		f = open(filename, 'r')
-		#with open (filename, 'r') as f:
+		
 		f.seek(28)
 		a = f.read(4)
 		byteRate=0
